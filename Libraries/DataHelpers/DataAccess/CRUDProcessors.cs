@@ -127,9 +127,9 @@ namespace Libraries.DataHelpers.DataAccess
         {
             var db = new SqliteDbAccess();
             string query = "INSERT INTO CarsModel " +
-                "(ModelName, SeriesName, ModelYear, NumberCar, CreateDate) " +
+                "(ModelName, SeriesName, ModelYear, NumberCar, CreateDate, RentCost) " +
                 "values " +
-                "(@modelName, @seriesName, @modelYear, @numberCar, @createDate)";
+                "(@modelName, @seriesName, @modelYear, @numberCar, @createDate, @rentCost)";
 
             Dictionary<string, object> dictionary = new Dictionary<string, object>();
             dictionary.Add("@modelName", car.ModelName);
@@ -137,6 +137,7 @@ namespace Libraries.DataHelpers.DataAccess
             dictionary.Add("@modelYear", car.ModelYear);
             dictionary.Add("@numberCar", car.NumberCar);
             dictionary.Add("@createDate", car.CreateDate);
+            dictionary.Add("@rentCost", car.RentCost);
 
             int hasil = db.Execution(query, dictionary);
 
@@ -154,7 +155,7 @@ namespace Libraries.DataHelpers.DataAccess
         {
             var db = new SqliteDbAccess();
             string query = "UPDATE CarsModel SET ModelName = @modelName, SeriesName = @seriesName," +
-                "  ModelYear = @modelYear, NumberCar = @numberCar, CreateDate = @createDate WHERE Id = @id";
+                "  ModelYear = @modelYear, NumberCar = @numberCar, CreateDate = @createDate, RentCost = @rentCost WHERE Id = @id";
 
             Dictionary<string, object> dictionary = new Dictionary<string, object>();
             dictionary.Add("@modelName", car.ModelName);
@@ -163,6 +164,7 @@ namespace Libraries.DataHelpers.DataAccess
             dictionary.Add("@numberCar", car.NumberCar);
             dictionary.Add("@createDate", car.CreateDate);
             dictionary.Add("@id", car.Id);
+            dictionary.Add("@rentCost", car.RentCost);
 
             int hasil = db.Execution(query, dictionary);
 

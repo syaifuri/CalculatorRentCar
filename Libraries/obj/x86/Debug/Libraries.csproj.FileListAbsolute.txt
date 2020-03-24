@@ -18,3 +18,4 @@ C:\Codes\CSharp\DDT\RentalCarCalculator\Libraries\obj\x86\Debug\Libraries.dll
 C:\Codes\CSharp\DDT\RentalCarCalculator\Libraries\obj\x86\Debug\Libraries.pdb
 C:\Codes\CSharp\DDT\RentalCarCalculator\Libraries\bin\x86\Debug\x64\SQLite.Interop.dll
 C:\Codes\CSharp\DDT\RentalCarCalculator\Libraries\bin\x86\Debug\x86\SQLite.Interop.dll
+C:\Codes\CSharp\DDT\RentalCarCalculator\Libraries\obj\x86\Debug\Libraries.csprojAssemblyReference.cache

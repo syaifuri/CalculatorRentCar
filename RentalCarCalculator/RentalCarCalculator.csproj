@@ -50,10 +50,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DataHelpers\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Libraries\Libraries.csproj">
       <Project>{0ef289ad-6fd3-4042-89bf-093cc4a59bde}</Project>

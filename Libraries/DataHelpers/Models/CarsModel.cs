@@ -16,6 +16,7 @@ namespace Libraries.DataHelpers.Models
         public string SeriesName { get; set; }
         public int ModelYear { get; set; }
         public string NumberCar { get; set; }
+        public decimal RentCost { get; set; }
         public string CreateDate { get; set; }  // use string format "YYYY-MM-DD HH:MM:SS.SSS" for sqlite
     }
 }
