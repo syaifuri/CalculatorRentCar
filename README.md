@@ -3,7 +3,7 @@ calculation discount
 
 This Project Contains:
 1. Project "Libraries" 
-   this is library class for CRUD, Models and Processing data functions
+   this is library class for CRUD, Models and Processing data functions. it uses lite sqlite db as data storage
  
 2. Project "LibrariesTest"
     this is TestUnit project that do test all functions of "Libraries" project.
