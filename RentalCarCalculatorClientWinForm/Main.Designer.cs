@@ -30,6 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.DGResult = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.TbCarQty = new System.Windows.Forms.TextBox();
@@ -40,33 +41,32 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.DGviewMasterData = new System.Windows.Forms.DataGridView();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.TbId = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.BtnDelete = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             this.BtnUpdate = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
             this.BtnInsert = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.TbRentCost = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.TbCarNumber = new System.Windows.Forms.TextBox();
+            this.TbModelName = new System.Windows.Forms.TextBox();
             this.TbModelYear = new System.Windows.Forms.TextBox();
             this.TbSeriesName = new System.Windows.Forms.TextBox();
-            this.TbModelName = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.TbRentCost = new System.Windows.Forms.TextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.TbId = new System.Windows.Forms.TextBox();
-            this.DGResult = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGResult)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGviewMasterData)).BeginInit();
             this.panel6.SuspendLayout();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGResult)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -89,6 +89,17 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(760, 407);
             this.panel4.TabIndex = 6;
+            // 
+            // DGResult
+            // 
+            this.DGResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGResult.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DGResult.Location = new System.Drawing.Point(0, 0);
+            this.DGResult.Name = "DGResult";
+            this.DGResult.RowHeadersWidth = 51;
+            this.DGResult.RowTemplate.Height = 24;
+            this.DGResult.Size = new System.Drawing.Size(760, 407);
+            this.DGResult.TabIndex = 0;
             // 
             // panel2
             // 
@@ -128,14 +139,14 @@
             this.CbModel.FormattingEnabled = true;
             this.CbModel.Location = new System.Drawing.Point(156, 108);
             this.CbModel.Name = "CbModel";
-            this.CbModel.Size = new System.Drawing.Size(164, 24);
+            this.CbModel.Size = new System.Drawing.Size(372, 24);
             this.CbModel.TabIndex = 2;
             // 
             // TbDaysQty
             // 
             this.TbDaysQty.Location = new System.Drawing.Point(156, 68);
             this.TbDaysQty.Name = "TbDaysQty";
-            this.TbDaysQty.Size = new System.Drawing.Size(164, 22);
+            this.TbDaysQty.Size = new System.Drawing.Size(173, 22);
             this.TbDaysQty.TabIndex = 0;
             // 
             // BtnSubmit
@@ -186,6 +197,15 @@
             this.panel3.Size = new System.Drawing.Size(888, 708);
             this.panel3.TabIndex = 0;
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.DGviewMasterData);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 301);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(888, 407);
+            this.panel5.TabIndex = 15;
+            // 
             // DGviewMasterData
             // 
             this.DGviewMasterData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -197,125 +217,6 @@
             this.DGviewMasterData.Size = new System.Drawing.Size(888, 407);
             this.DGviewMasterData.TabIndex = 0;
             this.DGviewMasterData.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGviewMasterData_CellClick);
-            // 
-            // BtnDelete
-            // 
-            this.BtnDelete.Location = new System.Drawing.Point(268, 249);
-            this.BtnDelete.Name = "BtnDelete";
-            this.BtnDelete.Size = new System.Drawing.Size(75, 29);
-            this.BtnDelete.TabIndex = 12;
-            this.BtnDelete.Text = "Delete";
-            this.BtnDelete.UseVisualStyleBackColor = true;
-            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
-            // 
-            // BtnUpdate
-            // 
-            this.BtnUpdate.Location = new System.Drawing.Point(168, 249);
-            this.BtnUpdate.Name = "BtnUpdate";
-            this.BtnUpdate.Size = new System.Drawing.Size(75, 29);
-            this.BtnUpdate.TabIndex = 11;
-            this.BtnUpdate.Text = "Update";
-            this.BtnUpdate.UseVisualStyleBackColor = true;
-            this.BtnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
-            // 
-            // BtnInsert
-            // 
-            this.BtnInsert.Location = new System.Drawing.Point(72, 249);
-            this.BtnInsert.Name = "BtnInsert";
-            this.BtnInsert.Size = new System.Drawing.Size(75, 29);
-            this.BtnInsert.TabIndex = 10;
-            this.BtnInsert.Text = "Insert";
-            this.BtnInsert.UseVisualStyleBackColor = true;
-            this.BtnInsert.Click += new System.EventHandler(this.btnInsert_Click);
-            // 
-            // TbCarNumber
-            // 
-            this.TbCarNumber.Location = new System.Drawing.Point(144, 154);
-            this.TbCarNumber.Name = "TbCarNumber";
-            this.TbCarNumber.Size = new System.Drawing.Size(164, 22);
-            this.TbCarNumber.TabIndex = 7;
-            // 
-            // TbModelYear
-            // 
-            this.TbModelYear.Location = new System.Drawing.Point(144, 112);
-            this.TbModelYear.Name = "TbModelYear";
-            this.TbModelYear.Size = new System.Drawing.Size(164, 22);
-            this.TbModelYear.TabIndex = 6;
-            // 
-            // TbSeriesName
-            // 
-            this.TbSeriesName.Location = new System.Drawing.Point(144, 75);
-            this.TbSeriesName.Name = "TbSeriesName";
-            this.TbSeriesName.Size = new System.Drawing.Size(164, 22);
-            this.TbSeriesName.TabIndex = 5;
-            // 
-            // TbModelName
-            // 
-            this.TbModelName.Location = new System.Drawing.Point(144, 38);
-            this.TbModelName.Name = "TbModelName";
-            this.TbModelName.Size = new System.Drawing.Size(164, 22);
-            this.TbModelName.TabIndex = 4;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(48, 38);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 17);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Model Name";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(48, 115);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(80, 17);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Model Year";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(48, 80);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(89, 17);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "Series Name";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(48, 157);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(84, 17);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "Car Number";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(141, 6);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(118, 17);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Cars Master Data";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(48, 198);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(70, 17);
-            this.label10.TabIndex = 6;
-            this.label10.Text = "Rent Cost";
-            // 
-            // TbRentCost
-            // 
-            this.TbRentCost.Location = new System.Drawing.Point(144, 195);
-            this.TbRentCost.Name = "TbRentCost";
-            this.TbRentCost.Size = new System.Drawing.Size(164, 22);
-            this.TbRentCost.TabIndex = 8;
             // 
             // panel6
             // 
@@ -340,15 +241,6 @@
             this.panel6.Size = new System.Drawing.Size(888, 301);
             this.panel6.TabIndex = 14;
             // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.DGviewMasterData);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 301);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(888, 407);
-            this.panel5.TabIndex = 15;
-            // 
             // TbId
             // 
             this.TbId.Location = new System.Drawing.Point(314, 195);
@@ -358,16 +250,124 @@
             this.TbId.Text = "1";
             this.TbId.Visible = false;
             // 
-            // DGResult
+            // label5
             // 
-            this.DGResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGResult.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DGResult.Location = new System.Drawing.Point(0, 0);
-            this.DGResult.Name = "DGResult";
-            this.DGResult.RowHeadersWidth = 51;
-            this.DGResult.RowTemplate.Height = 24;
-            this.DGResult.Size = new System.Drawing.Size(760, 407);
-            this.DGResult.TabIndex = 0;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(141, 6);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(118, 17);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Cars Master Data";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(48, 157);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(84, 17);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "Car Number";
+            // 
+            // BtnDelete
+            // 
+            this.BtnDelete.Location = new System.Drawing.Point(268, 249);
+            this.BtnDelete.Name = "BtnDelete";
+            this.BtnDelete.Size = new System.Drawing.Size(75, 29);
+            this.BtnDelete.TabIndex = 12;
+            this.BtnDelete.Text = "Delete";
+            this.BtnDelete.UseVisualStyleBackColor = true;
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(48, 80);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(89, 17);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Series Name";
+            // 
+            // BtnUpdate
+            // 
+            this.BtnUpdate.Location = new System.Drawing.Point(168, 249);
+            this.BtnUpdate.Name = "BtnUpdate";
+            this.BtnUpdate.Size = new System.Drawing.Size(75, 29);
+            this.BtnUpdate.TabIndex = 11;
+            this.BtnUpdate.Text = "Update";
+            this.BtnUpdate.UseVisualStyleBackColor = true;
+            this.BtnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(48, 198);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(70, 17);
+            this.label10.TabIndex = 6;
+            this.label10.Text = "Rent Cost";
+            // 
+            // BtnInsert
+            // 
+            this.BtnInsert.Location = new System.Drawing.Point(72, 249);
+            this.BtnInsert.Name = "BtnInsert";
+            this.BtnInsert.Size = new System.Drawing.Size(75, 29);
+            this.BtnInsert.TabIndex = 10;
+            this.BtnInsert.Text = "Insert";
+            this.BtnInsert.UseVisualStyleBackColor = true;
+            this.BtnInsert.Click += new System.EventHandler(this.btnInsert_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(48, 115);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(80, 17);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Model Year";
+            // 
+            // TbRentCost
+            // 
+            this.TbRentCost.Location = new System.Drawing.Point(144, 195);
+            this.TbRentCost.Name = "TbRentCost";
+            this.TbRentCost.Size = new System.Drawing.Size(164, 22);
+            this.TbRentCost.TabIndex = 8;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(48, 38);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(87, 17);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Model Name";
+            // 
+            // TbCarNumber
+            // 
+            this.TbCarNumber.Location = new System.Drawing.Point(144, 154);
+            this.TbCarNumber.Name = "TbCarNumber";
+            this.TbCarNumber.Size = new System.Drawing.Size(164, 22);
+            this.TbCarNumber.TabIndex = 7;
+            // 
+            // TbModelName
+            // 
+            this.TbModelName.Location = new System.Drawing.Point(144, 38);
+            this.TbModelName.Name = "TbModelName";
+            this.TbModelName.Size = new System.Drawing.Size(164, 22);
+            this.TbModelName.TabIndex = 4;
+            // 
+            // TbModelYear
+            // 
+            this.TbModelYear.Location = new System.Drawing.Point(144, 112);
+            this.TbModelYear.Name = "TbModelYear";
+            this.TbModelYear.Size = new System.Drawing.Size(164, 22);
+            this.TbModelYear.TabIndex = 6;
+            // 
+            // TbSeriesName
+            // 
+            this.TbSeriesName.Location = new System.Drawing.Point(144, 75);
+            this.TbSeriesName.Name = "TbSeriesName";
+            this.TbSeriesName.Size = new System.Drawing.Size(164, 22);
+            this.TbSeriesName.TabIndex = 5;
             // 
             // Main
             // 
@@ -382,14 +382,14 @@
             this.Load += new System.EventHandler(this.Main_Load);
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DGResult)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DGviewMasterData)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DGResult)).EndInit();
             this.ResumeLayout(false);
 
         }

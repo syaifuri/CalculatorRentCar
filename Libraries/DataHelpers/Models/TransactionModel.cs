@@ -11,7 +11,7 @@ namespace Libraries.DataHelpers.Models
     {
         [Key]
         [Required]
-        public int Id { get; set; }
+      //  public int Id { get; set; }
         public string Car { get; set; }
         public int ModelYear { get; set; }
         public int QtyCar { get; set; }
