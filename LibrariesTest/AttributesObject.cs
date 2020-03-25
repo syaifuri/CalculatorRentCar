@@ -12,11 +12,13 @@ namespace LibrariesTest
         private int varInput0;
         private int varInput01;
         private int varInput02;
+        private int varIntOutput;
         private decimal varOutput;
         private decimal varExpected;
         private IEnumerable<CarsModel> carModels;
 
-       
+        
+
         public int VarInput0
         {
             get { return varInput0; }
@@ -33,6 +35,11 @@ namespace LibrariesTest
             set { varInput02 = value; }
         }
 
+        public int VarIntOutput
+        {
+            get { return varIntOutput; }
+            set { varIntOutput = value; }
+        }
         public decimal VarOutput
         {
             get { return varOutput; }

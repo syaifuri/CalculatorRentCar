@@ -65,7 +65,7 @@ namespace Libraries.DataHelpers.Factory
 
 
         /// <summary>
-        /// Getting Discount value based on logic defined
+        /// Getting Discount value based on logic defined rule
         /// </summary>
         /// <param name="days"></param>
         /// <param name="carQty"></param>

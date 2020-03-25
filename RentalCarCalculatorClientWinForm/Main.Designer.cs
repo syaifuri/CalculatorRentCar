@@ -87,7 +87,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 301);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(760, 407);
+            this.panel4.Size = new System.Drawing.Size(687, 407);
             this.panel4.TabIndex = 6;
             // 
             // DGResult
@@ -98,7 +98,7 @@
             this.DGResult.Name = "DGResult";
             this.DGResult.RowHeadersWidth = 51;
             this.DGResult.RowTemplate.Height = 24;
-            this.DGResult.Size = new System.Drawing.Size(760, 407);
+            this.DGResult.Size = new System.Drawing.Size(687, 407);
             this.DGResult.TabIndex = 0;
             // 
             // panel2
@@ -115,7 +115,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(760, 301);
+            this.panel2.Size = new System.Drawing.Size(687, 301);
             this.panel2.TabIndex = 5;
             // 
             // label2
@@ -192,9 +192,9 @@
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(760, 0);
+            this.panel3.Location = new System.Drawing.Point(687, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(888, 708);
+            this.panel3.Size = new System.Drawing.Size(961, 708);
             this.panel3.TabIndex = 0;
             // 
             // panel5
@@ -203,7 +203,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 301);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(888, 407);
+            this.panel5.Size = new System.Drawing.Size(961, 407);
             this.panel5.TabIndex = 15;
             // 
             // DGviewMasterData
@@ -214,7 +214,7 @@
             this.DGviewMasterData.Name = "DGviewMasterData";
             this.DGviewMasterData.RowHeadersWidth = 51;
             this.DGviewMasterData.RowTemplate.Height = 24;
-            this.DGviewMasterData.Size = new System.Drawing.Size(888, 407);
+            this.DGviewMasterData.Size = new System.Drawing.Size(961, 407);
             this.DGviewMasterData.TabIndex = 0;
             this.DGviewMasterData.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGviewMasterData_CellClick);
             // 
@@ -238,12 +238,12 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(888, 301);
+            this.panel6.Size = new System.Drawing.Size(961, 301);
             this.panel6.TabIndex = 14;
             // 
             // TbId
             // 
-            this.TbId.Location = new System.Drawing.Point(314, 195);
+            this.TbId.Location = new System.Drawing.Point(338, 195);
             this.TbId.Name = "TbId";
             this.TbId.Size = new System.Drawing.Size(70, 22);
             this.TbId.TabIndex = 9;
@@ -302,9 +302,9 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(48, 198);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(70, 17);
+            this.label10.Size = new System.Drawing.Size(105, 17);
             this.label10.TabIndex = 6;
-            this.label10.Text = "Rent Cost";
+            this.label10.Text = "Rent Cost / day";
             // 
             // BtnInsert
             // 
@@ -327,7 +327,7 @@
             // 
             // TbRentCost
             // 
-            this.TbRentCost.Location = new System.Drawing.Point(144, 195);
+            this.TbRentCost.Location = new System.Drawing.Point(168, 195);
             this.TbRentCost.Name = "TbRentCost";
             this.TbRentCost.Size = new System.Drawing.Size(164, 22);
             this.TbRentCost.TabIndex = 8;
@@ -343,28 +343,28 @@
             // 
             // TbCarNumber
             // 
-            this.TbCarNumber.Location = new System.Drawing.Point(144, 154);
+            this.TbCarNumber.Location = new System.Drawing.Point(168, 154);
             this.TbCarNumber.Name = "TbCarNumber";
             this.TbCarNumber.Size = new System.Drawing.Size(164, 22);
             this.TbCarNumber.TabIndex = 7;
             // 
             // TbModelName
             // 
-            this.TbModelName.Location = new System.Drawing.Point(144, 38);
+            this.TbModelName.Location = new System.Drawing.Point(168, 38);
             this.TbModelName.Name = "TbModelName";
             this.TbModelName.Size = new System.Drawing.Size(164, 22);
             this.TbModelName.TabIndex = 4;
             // 
             // TbModelYear
             // 
-            this.TbModelYear.Location = new System.Drawing.Point(144, 112);
+            this.TbModelYear.Location = new System.Drawing.Point(168, 112);
             this.TbModelYear.Name = "TbModelYear";
             this.TbModelYear.Size = new System.Drawing.Size(164, 22);
             this.TbModelYear.TabIndex = 6;
             // 
             // TbSeriesName
             // 
-            this.TbSeriesName.Location = new System.Drawing.Point(144, 75);
+            this.TbSeriesName.Location = new System.Drawing.Point(168, 75);
             this.TbSeriesName.Name = "TbSeriesName";
             this.TbSeriesName.Size = new System.Drawing.Size(164, 22);
             this.TbSeriesName.TabIndex = 5;

@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -148,6 +149,11 @@ namespace RentalCarCalculatorClientWinForm
           
         }
 
+        /// <summary>
+        /// Submit Data based on parameter input form car Rental
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnSubmit_Click(object sender, EventArgs e)
         {
             
@@ -188,8 +194,7 @@ namespace RentalCarCalculatorClientWinForm
                     _items.Add(obj);
                     datagridTransactionData = new BindingList<TransactionModel>(_items.ToList());
                     DGResult.DataSource = datagridTransactionData;
-                    
-
+                    DGResult.Columns[5].DefaultCellStyle.Format = "c";
 
                 }
             }
@@ -199,16 +204,25 @@ namespace RentalCarCalculatorClientWinForm
             }
         }
 
+        /// <summary>
+        /// 1st Main Load call
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Main_Load(object sender, EventArgs e)
         {
             LoadData();
         }
         
+        /// <summary>
+        /// Load Data from Car Reference Tables
+        /// </summary>
         private void LoadData()
         {
             hasilx = crud.GetAllCars();
             datagridMasterData = new BindingList<CarsModel>(hasilx.ToList());
             DGviewMasterData.DataSource = datagridMasterData;
+            DGviewMasterData.Columns[5].DefaultCellStyle.Format = "c";
 
             // Set Combo box
             DataTable dt = new DataTable();
@@ -228,7 +242,7 @@ namespace RentalCarCalculatorClientWinForm
         }
 
         /// <summary>
-        /// Check Input Form Input Master Data CRUD
+        /// Check Input Form Input Master Data CRUD, validate all Textboxt not empty - simplify validation
         /// </summary>
         /// <returns></returns>
         private bool CheckInputMasterDataForms()
@@ -252,10 +266,10 @@ namespace RentalCarCalculatorClientWinForm
             return result;
         }
 
-        /// <summary>
-        /// Set Empty Form inputs
-        /// </summary>
 
+        /// <summary>
+        /// Set Reset all Text Box Form inputs
+        /// </summary>
         private void SetEmptyForm()
         {
             TbSeriesName.Text = string.Empty;
@@ -267,10 +281,18 @@ namespace RentalCarCalculatorClientWinForm
             TbCarQty.Text = string.Empty;
 
         }
+        
+        /// <summary>
+        /// Closing Job to make sure all instance do proper dispose, befor exit.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
             crud.Dispose();
             processor.Dispose();
+            Application.Exit();
+
         }
 
         /// <summary>
